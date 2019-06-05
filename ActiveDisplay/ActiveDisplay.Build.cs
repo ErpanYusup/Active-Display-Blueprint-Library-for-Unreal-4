@@ -25,6 +25,7 @@ public class ActiveDisplay : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
+				// Copy these to your project's Build.cs file 
 				"Core","ApplicationCore", "SlateCore", "RHI"
 				// ... add other public dependencies that you statically link with here ...
 			}
