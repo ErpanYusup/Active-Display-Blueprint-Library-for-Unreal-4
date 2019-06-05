@@ -34,7 +34,7 @@ Don't forget to include Modules in your Build.cs file.
     UGameUserSettings to make it work properly, otherwise index resets after relaunch.
     
     # In Addition
-    I'm working on more options and fetures. if you have any problem or if you need specific request, contant me
+    I'm working on more options and features. if you have any problem or if you need specific request, contant me
     
     # Log
     05/Jun/2019 Active Display Blueprint Library Repo Created. v1.0.0 added.
