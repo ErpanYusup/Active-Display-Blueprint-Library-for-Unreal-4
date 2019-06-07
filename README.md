@@ -1,8 +1,11 @@
 # Active-Display-Selection-for-Unreal-4
 Contants C++ blueprint library for fast and easy Run time setting For multi-screen player to select Which Monitor for the game to run on
 
-# Version
-1.0.0
+# Unreal Version
+4.22
+
+# Library Version
+1.0.1
 
 # Support OS
 Linux & Windows
@@ -38,3 +41,4 @@ Don't forget to include Modules in your Build.cs file.
     
     # Log
     05/Jun/2019 Active Display Blueprint Library Repo Created. v1.0.0 added.
+    08/Jun/2019 Removed some unnessesary codes to prevent compile errors
