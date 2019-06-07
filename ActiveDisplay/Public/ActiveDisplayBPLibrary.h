@@ -1,4 +1,3 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -20,7 +19,7 @@
 
 /*
 *  LOG
-*  05/ 06 / 2019 : Created Active Display Plugin
+*  05/ 06 / 2019 : Created Active Display Library
 *
 */
 
