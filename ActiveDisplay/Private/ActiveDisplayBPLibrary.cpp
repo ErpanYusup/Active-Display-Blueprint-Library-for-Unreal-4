@@ -1,18 +1,12 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "ActiveDisplayBPLibrary.h"
-#include "ActiveDisplay.h"
 
-UActiveDisplayBPLibrary::UActiveDisplayBPLibrary(const FObjectInitializer& ObjectInitializer)
-: Super(ObjectInitializer)
-{
-
-	
-}
-
-//Set Display to user input index display
-//@@ Param(s): Index -- int index number of the display you wish to set your game for
-//@@ Returns : True if Index is valid, false if not.
+/*
+* Set Display to user input index display
+* Param(s): FDisplayMetric -- DisplayMetricStrut || Index -- int index number of the display you wish to set your game for
+* Return  : True if Index is valid, false if not.
+*/
 bool UActiveDisplayBPLibrary::SetToActiveDisplay(int32 Index)
 {
 	//Get Display Metrics;
@@ -42,9 +36,12 @@ bool UActiveDisplayBPLibrary::SetToActiveDisplay(int32 Index)
 	return true;
 }
 
-//Get Number of Currently Active Display
-//@@ Params: None
-//@@ Returns: Number of active Display (if you have 2 monitor running, it will return 2, vice versa)
+
+/*
+* Get Number of Currently Active Display
+* Param(s): FDisplayMetric -- DisplayMetricStrut
+* Return  : Number of active Display (if you have 2 monitor running, it will return 2, vice versa)
+*/
 int32 UActiveDisplayBPLibrary::GetActiveDisplay()
 {
 	FDisplayMetrics Display;
@@ -54,9 +51,11 @@ int32 UActiveDisplayBPLibrary::GetActiveDisplay()
 }
 
 
-//Cycle to next monitor, return to first monitor if it hit the end of the list
-//@@ Params: CurrentIndex -- CurrentMonitorIndex
-//@@ Returns: NextDisplay Index
+/*
+* Cycle to next monitor, return to first monitor if it hit the end of the list
+* Param(s): CurrentIndex -- CurrentMonitorIndex
+* Return  : NextDisplay Index
+*/
 int32 UActiveDisplayBPLibrary::CycleToNextDisplay(int32 CurrentIndex)
 {
 	FDisplayMetrics Display;
@@ -83,9 +82,11 @@ int32 UActiveDisplayBPLibrary::CycleToNextDisplay(int32 CurrentIndex)
 	return TargetIndex;
 }
 
-//AdjustGameResolution if target Monitor does not support game resolution
-//@@ Params: Display -- displayMerics struct || Monitor -- MonitorInfo Struct
-//@@ Returns: None
+/*
+* AdjustGameResolution if target Monitor does not support game resolution
+* Param(s): Display -- displayMerics struct || Monitor -- MonitorInfo Struct
+* Return  : None
+*/
 void UActiveDisplayBPLibrary::AdjustGameResolution(FDisplayMetrics Display, FMonitorInfo Monitor)
 {
 
@@ -119,10 +120,12 @@ void UActiveDisplayBPLibrary::AdjustGameResolution(FDisplayMetrics Display, FMon
 }
 
 
-//Set game display to target display
-//@@ Params: Monitor -- MonitorInfo Struct
-//@@ Returns: None
-//@@ Works Both in Windows and Linux OS
+/*
+* Set game display to target display
+* Param(s): Monitor -- MonitorInfo Struct
+* Return  : None
+* Works Both in Windows and Linux OS
+*/
 void UActiveDisplayBPLibrary::SetDisplay(FMonitorInfo Monitor)
 {
 	const int32 WindowPosX = Monitor.WorkArea.Left;
