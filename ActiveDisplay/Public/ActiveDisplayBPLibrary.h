@@ -3,7 +3,7 @@
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Engine.h"
-#include "SWindow.h"
+#include "SWindow.h" // For Newer Version of Unreal, Use Widgets/SWindow.h
 #include "ActiveDisplayBPLibrary.generated.h"
 
 /* 
@@ -27,7 +27,7 @@
 UCLASS(config=GAME)
 class UActiveDisplayBPLibrary : public UBlueprintFunctionLibrary
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_UCLASS_BODY() // For Newer Version of Unreal, Use GENERATED_BODY() instead
 
 public:
 	//Set Current Game Display to Specific Monitor Index from input value, return true if successful, return false if input is out of index range.
