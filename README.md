@@ -41,5 +41,7 @@ Don't forget to include Modules in your Build.cs file.
     
     # Log
     05/Jun/2019 Active Display Blueprint Library Repo Created. v1.0.0 added.
+    
     08/Jun/2019 Removed some unnessesary codes to prevent compile errors
+    
     04/Apr/2020 Commented some changes on code for Newer version of unreal
