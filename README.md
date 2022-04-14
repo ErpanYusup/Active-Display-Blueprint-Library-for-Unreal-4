@@ -44,4 +44,4 @@ Don't forget to include Modules in your Build.cs file.
     
     08/Jun/2019 Removed some unnessesary codes to prevent compile errors
     
-    04/Apr/2020 Commented some changes on code for Newer version of unreal
+    04/Apr/2022 Commented some changes on code for Newer version of unreal
