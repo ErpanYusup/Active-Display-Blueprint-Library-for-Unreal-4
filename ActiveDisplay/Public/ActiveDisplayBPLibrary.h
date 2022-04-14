@@ -20,7 +20,7 @@
 /*
 *  LOG
 *  05/ 06 / 2019 : Created Active Display Library
-*
+*  Commented few out lated code for newer version of Unreal
 */
 
 
