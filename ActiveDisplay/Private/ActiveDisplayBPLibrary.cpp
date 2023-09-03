@@ -39,7 +39,7 @@ bool UActiveDisplayBPLibrary::SetToActiveDisplay(int32 Index)
 
 /*
 * Get Number of Currently Active Display
-* Param(s): FDisplayMetric -- DisplayMetricStrut
+* Param(s): None
 * Return  : Number of active Display (if you have 2 monitor running, it will return 2, vice versa)
 */
 int32 UActiveDisplayBPLibrary::GetActiveDisplay()
