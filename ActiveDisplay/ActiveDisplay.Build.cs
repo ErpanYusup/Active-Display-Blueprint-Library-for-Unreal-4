@@ -5,7 +5,8 @@ public class ActiveDisplay : ModuleRules
 	public ActiveDisplay(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-								// Copy The Missing Model names into your Build.cs File
+								// Copy The Missing Model names into your Build.cs File, 
+								// also include "HeadMountedDisplay" modules if it throws out HMD errors.
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "ApplicationCore", "SlateCore", "RHI" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
