@@ -11,7 +11,7 @@ Contants C++ blueprint library for fast and easy Run time setting For multi-scre
 Linux & Windows
 
 # IMPORTANT
-Don't forget to include Modules in your Build.cs file.
+Don't forget to include Modules in your Build.cs file. (Modules needed are under ActiveDisplay.Build.cs)
 
 # How to
 1. Right Click on your Unreal Content Browser and select "Create C++ Classes".
